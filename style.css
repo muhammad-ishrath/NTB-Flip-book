@@ -1,15 +1,20 @@
 body {
   background-color: #f0f0f0;
   font-family: sans-serif;
-  text-align: center;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 30px;
 }
 
 #flipbook {
   width: 800px;
   height: 500px;
-  margin: 20px auto;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .page {

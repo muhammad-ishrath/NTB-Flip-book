@@ -2,24 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flipbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Flipbook</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <h2>My Flipbook</h2>
+
   <div id="flipbook">
-    <div class="page"><img src="images/page1.jpeg" alt="Page 1"></div>
-    <div class="page"><img src="images/page2.jpeg" alt="Page 2"></div>
-    <div class="page"><img src="images/page3.jpeg" alt="Page 3"></div>
-    <div class="page"><img src="images/page4.jpeg" alt="Page 4"></div>
-    <div class="page"><img src="images/page5.jpeg" alt="Page 5"></div>
-    <!-- Add more pages as needed -->
+    <div class="page"><img src="images/page1.jpg" alt="Page 1" /></div>
+    <div class="page"><img src="images/page2.jpg" alt="Page 2" /></div>
+    <div class="page"><img src="images/page3.jpg" alt="Page 3" /></div>
+    <div class="page"><img src="images/page4.jpg" alt="Page 4" /></div>
+    <!-- Add more pages here -->
   </div>
 
+  <!-- JS Libraries -->
   <script src="libs/jquery.min.js"></script>
   <script src="libs/turn.min.js"></script>
-  <script src="script.js"></script>
+
+  <!-- Init Script -->
+  <script>
+    $(document).ready(function () {
+      $('#flipbook').turn({
+        width: 800,
+        height: 500,
+        autoCenter: true
+      });
+    });
+  </script>
+
 </body>
 </html>
