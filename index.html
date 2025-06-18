@@ -3,63 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Flipbook</title>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
-  <style>
-    body {
-      background-color: #f0f0f0;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    h2 {
-      text-align: center;
-      padding-top: 20px;
-    }
-    #flipbook {
-      width: 800px;
-      height: 500px;
-      margin: 40px auto;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-    #flipbook .page {
-      width: 400px;
-      height: 500px;
-      background: white;
-      overflow: hidden;
-    }
-    #flipbook .page img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-    }
-  </style>
+  <title>Flipbook</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<h2>My Flipbook</h2>
-<div id="flipbook">
-  <div class="page"><img src="images/page1.jpeg" alt="Page 1"></div>
-  <div class="page"><img src="images/page2.jpeg" alt="Page 2"></div>
-  <div class="page"><img src="images/page3.jpeg" alt="Page 3"></div>
-  <div class="page"><img src="images/page4.jpeg" alt="Page 4"></div>
-  <div class="page"><img src="images/page5.jpeg" alt="Page 5"></div>
-</div>
+  <h2>My Flipbook</h2>
+  <div id="flipbook">
+    <div class="page"><img src="images/page1.jpeg" alt="Page 1"></div>
+    <div class="page"><img src="images/page2.jpeg" alt="Page 2"></div>
+    <div class="page"><img src="images/page3.jpeg" alt="Page 3"></div>
+    <div class="page"><img src="images/page4.jpeg" alt="Page 4"></div>
+    <div class="page"><img src="images/page5.jpeg" alt="Page 5"></div>
+    <!-- Add more pages as needed -->
+  </div>
 
-<script>
-  $(document).ready(function() {
-    $("#flipbook").turn({
-      width: 800,
-      height: 500,
-      autoCenter: true,
-      elevation: 50,
-      gradients: true,
-      acceleration: true
-    });
-  });
-</script>
-
+  <script src="libs/jquery.min.js"></script>
+  <script src="libs/turn.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
